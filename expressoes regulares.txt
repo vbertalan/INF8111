@@ -1,0 +1,16 @@
+## removes lines like "#1  0x40bad4cf in raise (sig=6) at ../sysdeps/posix/raise.c:27"
+#.*
+
+## removes lines like "aLine=964) at nsDebug.cpp:93"
+[a-z]+[A-Z].*
+
+## removes lines like "context=0x8175400) at mkstream.c:237"
+.*=.*
+
+## removes lines like ---Type <return> to continue, or q <return> to quit---
+---.*---
+
+[a-z]+[A-Z].*|#.*|.*=.*|---.*|(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?
+
+
+
